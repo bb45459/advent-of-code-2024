@@ -1,21 +1,21 @@
 function parseInput() {
-    const input = Deno.readTextFileSync("src/day__DAY__/input.txt");
+  const input = Deno.readTextFileSync("src/day__DAY__/input.txt");
 
-    const parsed = input.split("\n");
+  const parsed = input.split("\n");
 
-    return parsed;
+  return parsed;
 }
 
 function part1() {
-    const input = parseInput();
+  const input = parseInput();
 
-    return 0;
+  return 0;
 }
 
 function part2() {
-    const input = parseInput();
+  const input = parseInput();
 
-    return 0;
+  return 0;
 }
 
 part1();
