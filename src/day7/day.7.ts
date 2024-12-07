@@ -29,6 +29,10 @@ function part1() {
         if (j === 0) {
           return el;
         }
+        if (optionAcc > total) {
+          // end early if we're doomed
+          i = operations;
+        }
         if (ops[j - 1] === "0") {
           return optionAcc + el;
         } else if (ops[j - 1] === "1") {
@@ -72,6 +76,10 @@ function part2() {
       const optionTotal = sequence.reduce((optionAcc, el, j) => {
         if (j === 0) {
           return el;
+        }
+        if (optionAcc > total) {
+          // end early if we're doomed
+          i = operations;
         }
         if (ops[j - 1] === "0") {
           return optionAcc + el;
